@@ -1,0 +1,28 @@
+<GuiXml>
+<Font name="myfont" font="$(MEDIUM_FONT)|$(KB_54)" />
+    <Controls>
+        <TopLevelControl name="FooAddonIndicator"  mouseEnabled="true" movable="true" clampedToScreen="true">
+            <Dimensions x="250" y="50" />
+            <Anchor point="CENTER" />
+            <OnUpdate>
+                AddonOnUpdate()
+            </OnUpdate>
+            <OnMoveStop>
+                FooAddon.OnIndicatorMoveStop()
+            </OnMoveStop>
+
+            <Controls >
+                <Backdrop name="$(parent)BG" centerColor="000000" edgeColor="000000" alpha="1.0">
+                    <Dimensions x="550" y="75" />
+                    <Anchor point="CENTER" relativeTo="$(parent)" relativePoint="CENTER" />
+                </Backdrop>
+                
+                <Label name="$(parent)Label" font="myfont" color="ffffff" text="nothing here to see">
+                    
+                    <Anchor point="CENTER" relativeTo="$(parent)" relativePoint="CENTER" />
+                </Label>
+                
+            </Controls>
+        </TopLevelControl>
+    </Controls>
+</GuiXml>

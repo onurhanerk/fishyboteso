@@ -1,0 +1,10 @@
+## Title: Foo Addon
+## APIVersion: 100025, 100026
+## SavedVariables: FooAddonSavedVariables
+## OptionalDependsOn: LibStub LibMapPing LibGPS
+
+libs/LibStub/LibStub.lua
+libs/LibMapPing/LibMapPing.lua
+libs/LibGPS/LibGPS.lua
+FooAddon.xml
+FooAddon.lua
